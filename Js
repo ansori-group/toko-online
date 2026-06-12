@@ -1,0 +1,17 @@
+let slide = 0;
+
+const slides =
+document.querySelector('.slides');
+
+setInterval(() => {
+
+slide++;
+
+if(slide > 2){
+slide = 0;
+}
+
+slides.style.transform =
+`translateX(-${slide * 100}%)`;
+
+},3000);
